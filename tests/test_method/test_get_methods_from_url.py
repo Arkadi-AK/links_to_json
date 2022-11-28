@@ -1,7 +1,7 @@
 import aiohttp
 import pytest
 
-from src.get_methods_from_url import uri_validator, get_allow_methods, inputs
+from src.get_methods_from_url import uri_validator, get_allow_methods
 
 
 @pytest.mark.parametrize("a, expected_result", [
