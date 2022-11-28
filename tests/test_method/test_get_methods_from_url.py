@@ -21,4 +21,5 @@ def test_uri_validator(a, expected_result):
 async def test_get_allow_methods():
     url = "https://google.com"
     async with aiohttp.ClientSession() as session:
-        assert await get_allow_methods(session, url) == {'GET': 200, 'HEAD': 200}
+        response = {'GET': 200, 'HEAD': 200}
+        assert await get_allow_methods(session, url) == response
